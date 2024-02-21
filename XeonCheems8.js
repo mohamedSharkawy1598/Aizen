@@ -6032,7 +6032,7 @@ case 'rate': {
             await replygcxeon(jawab)
             }
             break
-            case 'runtime': {
+            case 'وقت-التشغيل': {
             	let lowq = `*The Bot Has Been Online For:*\n*${runtime(process.uptime())}*`
                 replygcxeon(lowq)
             	}
@@ -6048,13 +6048,13 @@ const okebnh1 =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15
 const xeonkak = okebnh1[Math.floor(Math.random() * okebnh1.length)]
 XeonBotInc.sendMessage(m.chat, { text: xeonkak }, { quoted: m })
 break
-            case 'soulmate': {
+            case 'زوجني': {
             if (!m.isGroup) return XeonStickGroup()
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
 XeonBotInc.sendMessage(m.chat,
-{ text: `👫Your Soulmate Is
+{ text: `*『االف مبروك علي العروسين برفاء والبنين🤥♥*
 
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`,
 contextInfo:{
@@ -6073,14 +6073,14 @@ isForwarded: true,
 { quoted: m})        
             }
             break
- case 'couple': {
+ case 'زواج': {
             if (!m.isGroup) return XeonStickGroup()
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
 XeonBotInc.sendMessage(m.chat,
 { text: `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-Cieeee, What's Going On❤️💖👀`,
+هيا لي زواج انكم مناسبين لبعضكم❤️💖👀`,
 contextInfo:{
 mentionedJid:[orang, jodoh],
 forwardingScore: 9999999,
@@ -6119,9 +6119,9 @@ isForwarded: true,
                 XeonBotInc.sendMessage(m.chat, {caption: `${themeemoji} Title : ${result.title}\n${themeemoji} Source : ${result.source}\n${themeemoji} Media Url : ${result.image}`, image: { url: result.image }} , { quoted: m })
             }
             break
-            case 'pick': {
+            case 'اختار': {
             	if (!m.isGroup) return XeonStickGroup()
-            	if (!text) return replygcxeon(`What do you want to pick?\nExample: ${prefix + command} idiot`)
+            	if (!text) return replygcxeon(`*『قم بختيار كلمة وانا سوف اقوم بختيار شخص عشوائي مناسبة له الكلمة🤥』*`)
              const groupMetadata = m.isGroup ? await XeonBotInc.groupMetadata(m.chat)
                  .catch((e) => {}) : ""
              const participants = m.isGroup ? await groupMetadata.participants : ""
@@ -6148,8 +6148,8 @@ mentionedJid:[xeonshimts],
 }, { quoted: m })
          }
      break
-     case "igvid": case "instavid": {
-if (!text) return replygcxeon(`Where is the link?\n\nExample : ${prefix + command} https://www.instagram.com/reel/Ctjt0srIQFg/?igshid=MzRlODBiNWFlZA==`)
+     case "انستا": case "انستغرام": {
+if (!text) return replygcxeon(`*『اين رابط الانستجرام الذي تود تحميلة👽』*`)
 XeonStickWait()
 let resxeonyinsta = await XeonInstaMp4(text)
 const gha1 = await XeonBotInc.sendMessage(m.chat,{video:{url: resxeonyinsta.url[0].url},caption: mess.success},{quoted:m})
@@ -6185,15 +6185,15 @@ let ghd = await XeonBotInc.sendFileUrl(m.chat, risponsxeon[i], `Here you go!`, m
 }
 }
 break 
-case "fbvid": case "facebookvid":{
-if (!text) return replygcxeon(`Where is the url?\n\nExample: ${prefix + command} https://www.facebook.com/groups/2616981278627207/permalink/3572542609737731/?mibextid=Nif5oz`)
+case "فيس": case "فيسبوك":{
+if (!text) return replygcxeon(`*『اين رابط الفيس الذي تود تحميلة 👽』*`)
 XeonStickWait()
 let res = await XeonFb(q)
 let ghdp = await XeonBotInc.sendMessage(from,{video:{url: res.url[0].url},caption: mess.success},{quoted:m})
 }
 break
-case "twittervid":case "twitvid":{
-if (!text) return replygcxeon(`Where is the url?\n\nExample: ${prefix + command} https://twitter.com/WarnerBrosIndia/status/1668933430795485184?s=19`)
+case "تويتر":case "twitvid":{
+if (!text) return replygcxeon(`*『اين رابط التويتر الذي تود تحميلة👽』*`)
 XeonStickWait()
 let res = await XeonTwitter(q)
 let ghdx = await XeonBotInc.sendMessage(from,{video:{url: res.url[0].url},caption: mess.success},{quoted:m})
@@ -6230,7 +6230,7 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
         return replygcxeon(`${themeemoji} *Fact:* ${data.fact}\n`)   
     }
     break
-    case 'ai': case 'openai':
+    case 'ai': case 'بوت':
 try {
 if (global.keyopenai === '') return replygcxeon("Api key limi exceeded");
 if (!q) return replygcxeon(`Chat with AI.\n\nExample:\n${prefix + command} What is coding`)
@@ -6393,8 +6393,8 @@ result = anutrest[Math.floor(Math.random() * anutrest.length)]
 XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
 }
 break
-case 'ringtone': {
-		if (!text) return replygcxeon(`Example : ${prefix + command} black rover`)
+case 'رنة': {
+		if (!text) return replygcxeon(`*『قم بكتابة اسم الرنة لاكن بي الانجليزي🧸』*`)
         let { ringtone } = require('./lib/scraper')
 		let anutone2 = await ringtone(text)
 		let result = anutone2[Math.floor(Math.random() * anutone2.length)]
@@ -6461,54 +6461,54 @@ encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: 
 
 }
 break
-	case 'anime': {
-if (!text) return replygcxeon(`Which anime are you lookin for?`)
+	case 'انمي': {
+if (!text) return replygcxeon(`*『قم بكتابة اسم الانمي الذي تود البحث عنة🧸』*`)
 const malScraper = require('mal-scraper')
 XeonStickWait()
         const anime = await malScraper.getInfoFromName(text).catch(() => null)
         if (!anime) return replygcxeon(`Could not find`)
 let animetxt = `
-🎀 *Title: ${anime.title}*
-🎋 *Type: ${anime.type}*
-🎐 *Premiered on: ${anime.premiered}*
-💠 *Total Episodes: ${anime.episodes}*
-📈 *Status: ${anime.status}*
-💮 *Genres: ${anime.genres}
-📍 *Studio: ${anime.studios}*
-🌟 *Score: ${anime.score}*
-💎 *Rating: ${anime.rating}*
-🏅 *Rank: ${anime.ranked}*
-💫 *Popularity: ${anime.popularity}*
-♦️ *Trailer: ${anime.trailer}*
-🌐 *URL: ${anime.url}*
-❄ *Description:* ${anime.synopsis}*`
+🎀 *『الاسم』: ${anime.title}*
+🎋 *『الكاتب』: ${anime.type}*
+🎐 *『تم عرضه لأول مرة على』: ${anime.premiered}*
+💠 *『مجموع الحلقات』: ${anime.episodes}*
+📈 *『الحالة』: ${anime.status}*
+💮 *『النوع』: ${anime.genres}
+📍 *『الاستوديو』: ${anime.studios}*
+🌟 *『النتيجة』: ${anime.score}*
+💎 *『التقيم』: ${anime.rating}*
+🏅 *『المستوي』: ${anime.ranked}*
+💫 *『الشعبية』: ${anime.popularity}*
+♦️ *『جَرَّار』: ${anime.trailer}*
+🌐 *『الرابط』: ${anime.url}*
+❄ *『الوصف』:* ${anime.synopsis}*`
                 await XeonBotInc.sendMessage(m.chat,{image:{url:anime.picture}, caption:animetxt},{quoted:m})
                 }
                 break
-                case 'imdb':
-if (!text) return replygcxeon(`_Name a Series or movie`)
+                case 'فيلم':
+if (!text) return replygcxeon(`*『قم بكتابة اسم الفيلم الذي تود البحث عنة🧸』*`)
 XeonStickWait()
             let fids = await axios.get(`http://www.omdbapi.com/?apikey=742b2d09&t=${text}&plot=full`)
             let imdbt = ""
             console.log(fids.data)
             imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n" + " ``` IMDB SEARCH```\n" + "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n"
-            imdbt += "🎬Title      : " + fids.data.Title + "\n"
-            imdbt += "📅Year       : " + fids.data.Year + "\n"
-            imdbt += "⭐Rated      : " + fids.data.Rated + "\n"
-            imdbt += "📆Released   : " + fids.data.Released + "\n"
-            imdbt += "⏳Runtime    : " + fids.data.Runtime + "\n"
-            imdbt += "🌀Genre      : " + fids.data.Genre + "\n"
-            imdbt += "👨🏻‍💻Director   : " + fids.data.Director + "\n"
-            imdbt += "✍Writer     : " + fids.data.Writer + "\n"
-            imdbt += "👨Actors     : " + fids.data.Actors + "\n"
-            imdbt += "📃Plot       : " + fids.data.Plot + "\n"
-            imdbt += "🌐Language   : " + fids.data.Language + "\n"
-            imdbt += "🌍Country    : " + fids.data.Country + "\n"
-            imdbt += "🎖️Awards     : " + fids.data.Awards + "\n"
-            imdbt += "📦BoxOffice  : " + fids.data.BoxOffice + "\n"
-            imdbt += "🏙️Production : " + fids.data.Production + "\n"
-            imdbt += "🌟imdbRating : " + fids.data.imdbRating + "\n"
-            imdbt += "✅imdbVotes  : " + fids.data.imdbVotes + ""
+            imdbt += "🎬الاسم      : " + fids.data.Title + "\n"
+            imdbt += "📅السنين       : " + fids.data.Year + "\n"
+            imdbt += "⭐التقيم      : " + fids.data.Rated + "\n"
+            imdbt += "📆مطلق سراحه   : " + fids.data.Released + "\n"
+            imdbt += "⏳وقت الانطلاق    : " + fids.data.Runtime + "\n"
+            imdbt += "🌀النوع      : " + fids.data.Genre + "\n"
+            imdbt += "👨🏻‍💻المخرج   : " + fids.data.Director + "\n"
+            imdbt += "✍الكاتب     : " + fids.data.Writer + "\n"
+            imdbt += "👨ممثلين     : " + fids.data.Actors + "\n"
+            imdbt += "📃حبكة       : " + fids.data.Plot + "\n"
+            imdbt += "🌐الغة   : " + fids.data.Language + "\n"
+            imdbt += "🌍البلد    : " + fids.data.Country + "\n"
+            imdbt += "🎖️الجوائز     : " + fids.data.Awards + "\n"
+            imdbt += "📦شباك التذاكر  : " + fids.data.BoxOffice + "\n"
+            imdbt += "🏙️إنتاج : " + fids.data.Production + "\n"
+            imdbt += "🌟تقييم موقع imdb : " + fids.data.imdbRating + "\n"
+            imdbt += "✅مشاهدات موقع imdb  : " + fids.data.imdbVotes + ""
            XeonBotInc.sendMessage(m.chat, {
                 image: {
                     url: fids.data.Poster,
@@ -6518,23 +6518,23 @@ XeonStickWait()
                 quoted: m,
             })
             break
-            case 'weather':{
+            case 'الطقس':{
 if (!text) return replygcxeon('What location?')
             let wdata = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en`
             );
             let textw = ""
-            textw += `*🗺️Weather of  ${text}*\n\n`
-            textw += `*Weather:-* ${wdata.data.weather[0].main}\n`
-            textw += `*Description:-* ${wdata.data.weather[0].description}\n`
-            textw += `*Avg Temp:-* ${wdata.data.main.temp}\n`
-            textw += `*Feels Like:-* ${wdata.data.main.feels_like}\n`
-            textw += `*Pressure:-* ${wdata.data.main.pressure}\n`
-            textw += `*Humidity:-* ${wdata.data.main.humidity}\n`
-            textw += `*Humidity:-* ${wdata.data.wind.speed}\n`
-            textw += `*Latitude:-* ${wdata.data.coord.lat}\n`
-            textw += `*Longitude:-* ${wdata.data.coord.lon}\n`
-            textw += `*Country:-* ${wdata.data.sys.country}\n`
+            textw += `*『الطقس:-  ${text}』*\n\n`
+            textw += `*طقس:-* ${wdata.data.weather[0].main}\n`
+            textw += `*الوصف:-* ${wdata.data.weather[0].description}\n`
+            textw += `*متوسط ​​درجة الحرارة:-* ${wdata.data.main.temp}\n`
+            textw += `*أحس كأنني:-* ${wdata.data.main.feels_like}\n`
+            textw += `*ضغط:-* ${wdata.data.main.pressure}\n`
+            textw += `*رطوبة:-* ${wdata.data.main.humidity}\n`
+            textw += `*رطوبة:-* ${wdata.data.wind.speed}\n`
+            textw += `*خط العرض:-* ${wdata.data.coord.lat}\n`
+            textw += `*خط الطول:-* ${wdata.data.coord.lon}\n`
+            textw += `*البلد:-* ${wdata.data.sys.country}\n`
 
            XeonBotInc.sendMessage(
                 m.chat, {
