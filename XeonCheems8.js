@@ -4066,7 +4066,7 @@ case 'tomp4': case 'tovideo': {
               buffertruth = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
               XeonBotInc.sendMessage(from, { image: buffertruth, caption: '_You choose TRUTH_\n'+ xeontruth }, {quoted:m})
               break
-case 'checkme':
+case 'شخصية':
 					neme = args.join(" ")
 					bet = `${sender}`
 					var sifat = ['Fine','Unfriendly','Chapri','Nibba/nibbi','Annoying','Dilapidated','Angry person','Polite','Burden','Great','Cringe','Liar']
@@ -4093,29 +4093,28 @@ case 'checkme':
 					var takut = mengheikan[Math.floor(Math.random() * mengheikan.length)]
 					 profile = `*≡══《 Check @${bet.split('@')[0]} 》══≡*
 
-*Name :* ${pushname}
-*Characteristic :* ${sipat}
-*Hobby :* ${biho}
-*Simp :* ${bhucin}%
-*Great :* ${senga}%
-*Handsome :* ${chakep}
-*Character :* ${watak}
-*Good Morals :* ${baik}%
-*Bad Morals :* ${burug}%
-*Intelligence :* ${cerdas}%
-*Courage :* ${berani}%
-*Afraid :* ${takut}%
+*الاسم :* ${pushname}
+*الهواية :* ${biho}
+*خروف :* ${bhucin}%
+*عظيم :* ${senga}%
+*جمال :* ${chakep}
+*شخصية :* ${watak}
+*الاخلاق الحميدة :* ${baik}%
+*الاخلاق السيئة :* ${burug}%
+*ذكاء :* ${cerdas}%
+*شجاعة :* ${berani}%
+*يخاف :* ${takut}%
 
-*≡═══《 CHECK PROPERTIES 》═══≡*`
+*≡═══《 تحليل 》═══≡*`
 					buff = await getBuffer(defaultpp)
 XeonBotInc.sendMessage(from, { image: buff, caption: profile, mentions: [bet]},{quoted:m})
 break
-case 'toimg': {
+case 'لصورة': {
 	XeonStickWait()
 	const getRandom = (ext) => {
             return `${Math.floor(Math.random() * 10000)}${ext}`
         }
-        if (!m.quoted) return replygcxeon(`_Reply to Any Sticker._`)
+        if (!m.quoted) return replygcxeon(`*『قم برد علي الملصق الذي تريد تحويلة لصورة🧸』*`)
         let mime = m.quoted.mtype
 if (mime =="imageMessage" || mime =="stickerMessage")
 {
@@ -4971,13 +4970,13 @@ const i = Math.floor(Math.random() * wallpaper.length)
                 })
 //XeonBotInc.sendMessage(m.chat,{image:{url:wallpaper[i].image},caption:`*Query :* ${q}`})            
 break
-case 'اكيرا': case 'اكيما': case 'انا': case 'ارت': case 'سونا': case 'أيوزاوا': case 'بروتو': case 'بيتياس': case 'تشيهو': case 'شيتوجي': case 'cosplay': case 'cosplayloli': case 'cosplaysagiri': case 'cyber': case 'deidara': case 'doraemon': case 'elaina': case 'emilia': case 'erza': case 'exo':  case 'gamewallpaper': case 'gremory': case 'hacker': case 'hestia': case 'hinata': case 'husbu': case 'inori': case 'islamic': case 'isuzu': case 'itachi': case 'itori': case 'jennie': case 'jiso': case 'justina': case 'kaga': case 'kagura': case 'kakasih': case 'kaori': case 'cartoon': case 'shortquote': case 'keneki': case 'kotori': case 'kurumi': case 'lisa': case 'loli': case 'madara': case 'megumin': case 'mikasa': case 'mikey': case 'miku': case 'minato': case 'mountain': case 'naruto': case 'neko': case 'neko2': case 'nekonime': case 'nezuko': case 'onepiece': case 'pentol': case 'pokemon': case 'programming':  case 'randomnime': case 'randomnime2': case 'rize': case 'rose': case 'sagiri': case 'sakura': case 'sasuke': case 'satanic': case 'shina': case 'shinka': case 'shinomiya': case 'shizuka': case 'shota': case 'space': case 'technology': case 'tejina': case 'toukachan': case 'tsunade': case 'waifu': case 'yotsuba': case 'yuki': case 'yulibocil': case 'yumeko':{
+case 'اكيرا': case 'اكيما': case 'انيتا': case 'ارت': case 'سونا': case 'أيوزاوا': case 'بروتو': case 'بيتياس': case 'تشيهو': case 'شيتوجي': case 'cosplay': case 'cosplayloli': case 'cosplaysagiri': case 'cyber': case 'deidara': case 'doraemon': case 'elaina': case 'emilia': case 'erza': case 'exo':  case 'gamewallpaper': case 'gremory': case 'hacker': case 'hestia': case 'hinata': case 'husbu': case 'inori': case 'islamic': case 'isuzu': case 'itachi': case 'itori': case 'jennie': case 'jiso': case 'justina': case 'kaga': case 'kagura': case 'kakasih': case 'kaori': case 'cartoon': case 'shortquote': case 'keneki': case 'kotori': case 'kurumi': case 'lisa': case 'loli': case 'madara': case 'megumin': case 'mikasa': case 'mikey': case 'miku': case 'minato': case 'mountain': case 'naruto': case 'neko': case 'neko2': case 'nekonime': case 'nezuko': case 'onepiece': case 'pentol': case 'pokemon': case 'programming':  case 'randomnime': case 'randomnime2': case 'rize': case 'rose': case 'sagiri': case 'sakura': case 'sasuke': case 'satanic': case 'shina': case 'shinka': case 'shinomiya': case 'shizuka': case 'shota': case 'space': case 'technology': case 'tejina': case 'toukachan': case 'tsunade': case 'waifu': case 'yotsuba': case 'yuki': case 'yulibocil': case 'yumeko':{
 
 XeonStickWait()
 let heyy
 if (/اكيرا/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/master/akira.json')
 if (/اكيما/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/master/akiyama.json')
-if (/انا/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/master/ana.json')
+if (/انيتا/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/master/ana.json')
 if (/ارت/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/master/art.json')
 if (/سونا/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/master/asuna.json')
 if (/أيوزاوا/.test(command)) heyy = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/master/ayuzawa.json')
