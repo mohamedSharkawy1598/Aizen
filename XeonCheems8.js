@@ -4761,7 +4761,7 @@ var notnot = JSON.parse(fs.readFileSync('./HostMedia/tiktokpics/china.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-case 'hijab':
+case 'حجاب':
 XeonStickWait()
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/tiktokpics/hijab.json'))
 var hasil = pickRandom(notnot)
@@ -4827,7 +4827,7 @@ var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/antiwork.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-case 'blackpink':
+case 'blackpank':
 XeonStickWait()
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/blackpink.json'))
 var hasil = pickRandom(notnot)
@@ -4851,7 +4851,7 @@ var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/cosplay.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-case 'cat':
+case 'قطط':
 XeonStickWait()
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/cat.json'))
 var hasil = pickRandom(notnot)
@@ -4875,7 +4875,7 @@ var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/kayes.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-case 'kpop':
+case 'كيبوب':
 XeonStickWait()
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/kpop.json'))
 var hasil = pickRandom(notnot)
@@ -4887,7 +4887,7 @@ var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/notnot.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-case 'car':
+case 'سيارات':
 XeonStickWait()
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/car.json'))
 var hasil = pickRandom(notnot)
@@ -4899,7 +4899,7 @@ var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/ppcouple.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-case 'profilepic':  case 'profilepicture':
+case 'افتارات':  case 'profilepicture':
 XeonStickWait()
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/profile.json'))
 var hasil = pickRandom(notnot)
@@ -5144,10 +5144,10 @@ break
       replygcxeon(textt)
     }
     break
-          case 'emojimix': {
+          case 'دمج': {
 		let [emoji1, emoji2] = text.split`+`
-		if (!emoji1) return replygcxeon(`Example : ${prefix + command} 😅+🤔`)
-		if (!emoji2) return replygcxeon(`Example : ${prefix + command} 😅+🤔`)
+		if (!emoji1) return replygcxeon(`*『مثال : ${prefix + command} 😅+🤔』*`)
+		if (!emoji2) return replygcxeon(`*『مثال : ${prefix + command} 😅+🤔』*`)
 		let anumojimix = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
 		for (let res of anumojimix.results) {
 		    let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, res.url, m, { packname: global.packname, author: global.author, categories: res.tags })
@@ -6054,7 +6054,7 @@ break
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
 XeonBotInc.sendMessage(m.chat,
-{ text: `*『االف مبروك علي العروسين برفاء والبنين🤥♥*
+{ text: `*『الف مبروك علي العروسين برفاء والبنين🤥♥』*
 
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`,
 contextInfo:{
