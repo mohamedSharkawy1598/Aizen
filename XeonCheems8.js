@@ -4905,7 +4905,7 @@ var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/profile.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-case 'pubg':
+case 'ببجي':
 XeonStickWait()
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/randompics/pubg.json'))
 var hasil = pickRandom(notnot)
@@ -6129,7 +6129,7 @@ isForwarded: true,
              let me = m.sender
              let xeonshimts = member[Math.floor(Math.random() * member.length)]
              XeonBotInc.sendMessage(from, { 
-text: `The most *${text}* here is *@${xeonshimts.split("@")[0]}*`,
+text: `*لقد اخترت هذا/ *${text}* هنا *@${xeonshimts.split("@")[0]}*`,
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: true, 
@@ -6426,7 +6426,7 @@ console.log(err)
 return replygcxeon('Error')
 }
 break
-case 'patrick':
+case 'استيكربسيط':
 case 'patricksticker': {
 var ano = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/main/patrick')
 var wifegerak = ano.split('\n')
@@ -6434,7 +6434,7 @@ var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
 encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: global.packname, author: global.author, })
 }
 break
-case 'dogesticker':
+case 'استيكركلب':
 case 'dogestick':
 	case 'doge':{
 var ano = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/main/doge')
@@ -6443,7 +6443,7 @@ var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
 encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: global.packname, author: global.author, })
 }
 break
-case 'lovesticker':
+case 'استيكرحب':
 case 'lovestick' :{
 var ano = await fetchJson('https://raw.githubusercontent.com/DGXeon/XeonMedia/main/love')
 var wifegerak = ano.split('\n')
@@ -6473,7 +6473,7 @@ let animetxt = `
 🎐 *『تم عرضه لأول مرة على』: ${anime.premiered}*
 💠 *『مجموع الحلقات』: ${anime.episodes}*
 📈 *『الحالة』: ${anime.status}*
-💮 *『النوع』: ${anime.genres}
+💮 *『النوع』: ${anime.genres}*
 📍 *『الاستوديو』: ${anime.studios}*
 🌟 *『النتيجة』: ${anime.score}*
 💎 *『التقيم』: ${anime.rating}*
