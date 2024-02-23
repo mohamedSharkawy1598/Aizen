@@ -4069,12 +4069,12 @@ case 'tomp4': case 'tovideo': {
 case 'شخصية':
 					neme = args.join(" ")
 					bet = `${sender}`
-					var sifat = ['Fine','Unfriendly','Chapri','Nibba/nibbi','Annoying','Dilapidated','Angry person','Polite','Burden','Great','Cringe','Liar']
-					var hoby = ['Cooking','Dancing','Playing','Gaming','Painting','Helping Others','Watching anime','Reading','Riding Bike','Singing','Chatting','Sharing Memes','Drawing','Eating Parents Money','Playing Truth or Dare','Staying Alone']
+					var sifat = ['بخير','مريض','حزين','مكتئب','فرحان','غرقان','قوي','مبضون','مخنوق']
+					var hoby = ['طباخ','حرامي','جيمر','ظابط','رقاصة','ميكب','صانع انمي','رسام','سواق','دكتور','سواق توكتوك','مبرمج','صانع بوتات','مدير','عامل','عاطل']
 					var bukcin = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					var arp = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
-					var cakep = ['Yes','No','Very Ugly','Very Handsome']
-					var wetak= ['Caring','Generous','Angry person','Sorry','Submissive','Fine','Im sorry','Kind Hearted','Patient','UwU','Top','Helpful']
+					var cakep = ['نعم','لا','غير متاكد','متاكد']
+					var wetak= ['كرنج','بيض','ظريف','قمر','مز','هيبة','بدون كرامة','عسل','جامد','طيب','شرير','غبي']
 					var baikk = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					var bhuruk = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					var cerdhas = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -4091,19 +4091,19 @@ case 'شخصية':
 					var cerdas = cerdhas[Math.floor(Math.random() * cerdhas.length)]
 					var berani = berhani[Math.floor(Math.random() * berhani.length)]
 					var takut = mengheikan[Math.floor(Math.random() * mengheikan.length)]
-					 profile = `*≡══《 Check @${bet.split('@')[0]} 》══≡*
+					 profile = `*≡══《 تحليل @${bet.split('@')[0]} 》══≡*
 
 *الاسم :* ${pushname}
-*الهواية :* ${biho}
-*خروف :* ${bhucin}%
-*عظيم :* ${senga}%
-*جمال :* ${chakep}
+*العمل :* ${biho}
+*الخرفنة :* ${bhucin}%
+*الهبل :* ${senga}%
+*الجمال :* ${chakep}
 *شخصية :* ${watak}
 *الاخلاق الحميدة :* ${baik}%
 *الاخلاق السيئة :* ${burug}%
-*ذكاء :* ${cerdas}%
-*شجاعة :* ${berani}%
-*يخاف :* ${takut}%
+*الذكاء :* ${cerdas}%
+*الشجاعة :* ${berani}%
+*الخوف :* ${takut}%
 
 *≡═══《 تحليل 》═══≡*`
 					buff = await getBuffer(defaultpp)
@@ -4151,7 +4151,7 @@ replygcxeon(`Photo/Video?`)
 }
 }
 break
-case 'qc': case'text': {
+case 'اكتب': case'text': {
     if (!args[0] && !m.quoted) {
       return replygcxeon(`Where is the text?`)
     }
@@ -4209,8 +4209,8 @@ case 'qc': case'text': {
     }
     }
     break
-case 's': case 'sticker': case 'stiker': {
-if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
+case 's': case 'ملصق': case 'stiker': {
+if (!quoted) return replygcxeon(`*『قم بي ارسال صورة او فيديو لصنع منهم بشرط ان لا يزيد الفيديو عن 9ثوان🧸』*`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
 let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
@@ -4248,14 +4248,14 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nNama : ${q}\nAnswer : *${t
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
 					XeonBotInc.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
-case 'awesomecheck':
-  case 'greatcheck':
-    case 'gaycheck':
-      case 'cutecheck':
-        case 'lesbicheck':
-          case 'lesbiancheck':
-             case 'hornycheck':
-                 case 'prettycheck':
+case 'هبلي':
+  case 'ذكائي':
+    case 'غبائي':
+      case 'جمالي':
+        case 'انوثتي':
+          case 'رجولتي':
+             case 'انحرافي':
+                 case 'جدعنتي':
                     case 'lovelycheck':
                       case 'uglycheck':
 if (!m.isGroup) return XeonStickGroup()
@@ -4263,11 +4263,11 @@ const cex = body.slice(0)
 const cek1 = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 const cek2 = cek1[Math.floor(Math.random() * cek1.length)]
 if (mentionByReply) {
-XeonBotInc.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${mentionByReply.split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [mentionByReply] }, { quoted: m })
+XeonBotInc.sendMessage(from, { text: 'السؤال : *' + cex + '*\nالشخص : ' + `@${mentionByReply.split('@')[0]}` + '\nالنسبة : ' + cek2 + '%', mentions: [mentionByReply] }, { quoted: m })
 } else if (mentionByTag[0] && isGroup) {
-XeonBotInc.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${mentionByTag[0].split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [mentionByTag[0]] }, { quoted: m })
+XeonBotInc.sendMessage(from, { text: 'السؤال : *' + cex + '*\nالشخص : ' + `@${mentionByTag[0].split('@')[0]}` + '\nالنسبة : ' + cek2 + '%', mentions: [mentionByTag[0]] }, { quoted: m })
 } else if (!mentionByReply && !mentionByTag[0]) {
-XeonBotInc.sendMessage(from, { text: 'Question : *' + cex + '*\nChecker : ' + `@${sender.split('@')[0]}` + '\nAnswer : ' + cek2 + '%', mentions: [sender] }, { quoted: m })
+XeonBotInc.sendMessage(from, { text: 'السؤال : *' + cex + '*\nالشخص : ' + `@${sender.split('@')[0]}` + '\nالنسبة : ' + cek2 + '%', mentions: [sender] }, { quoted: m })
 }
 break
 case 'obfus': case 'obfuscate':{
