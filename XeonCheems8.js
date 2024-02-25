@@ -3309,7 +3309,7 @@ replygcxeon(`${result4}`)
 XeonBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime }, { quoted : m })
 }
 break
-case 'tiktokxx':{ 
+case 'تيك':{ 
 if (!text) return replygcxeon( `Example : ${prefix + command} link`)
 if (!q.includes('tiktok')) return replygcxeon(`Link Invalid!!`)
 XeonStickWait()
@@ -3327,23 +3327,23 @@ XeonBotInc.sendMessage(m.chat, { audio: { url: data.audio }, mimetype: 'audio/mp
 })
 }
 break
-case 'google': {
+case 'بحث': {
 if (!q) return replygcxeon(`Example : ${prefix + command} ${botname}`)
 XeonStickWait()
 let google = require('google-it')
 google({'query': text}).then(res => {
-let teks = `Google Search From : ${text}\n\n`
+let teks = `البحث من جوجل : ${text}\n\n`
 for (let g of res) {
-teks += `⭔ *Title* : ${g.title}\n`
-teks += `⭔ *Description* : ${g.snippet}\n`
-teks += `⭔ *Link* : ${g.link}\n\n────────────────────────\n\n`
+teks += `⭔ *الاسم* : ${g.title}\n`
+teks += `⭔ *الوصف* : ${g.snippet}\n`
+teks += `⭔ *الرابط* : ${g.link}\n\n────────────────────────\n\n`
 } 
 replygcxeon(teks)
 })
 }
 break
-case 'happymod':{
-if (!q) return replygcxeon(`Example ${prefix+command} Sufway surfer mod`)
+case 'هابيمود':{
+if (!q) return replygcxeon(`*مثال ${prefix+command} Sufway surfer mod*`)
 XeonStickWait()
 let kat = await scp1.happymod(q)
 replygcxeon(util.format(kat))
@@ -3384,8 +3384,8 @@ Copy the link above and type the .ytmp3 link for audio and the .ytmp4 link for v
 XeonBotInc.sendMessage(m.chat, { image : eek, caption: ngen }, { quoted: m})
 }
 break
-case 'play':  case 'song': {
-if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
+case 'اغنية':  case 'اغنيه': {
+if (!text) return replygcxeon(`*『قم بكتابة اسم الاغنيه التي تريد تنزيلة🧸』*`)
 const xeonplaymp3 = require('./lib/ytdl2')
 let yts = require("youtube-yts")
         let search = await yts(text)
@@ -3409,7 +3409,7 @@ await XeonBotInc.sendMessage(m.chat,{
 await fs.unlinkSync(pl.path)
 }
 break
-case "ytmp3": case "ytaudio": //credit: Ray Senpai â¤ï¸ https://github.com/EternityBots/Nezuko
+case "yt": case "ytaudio": //credit: Ray Senpai â¤ï¸ https://github.com/EternityBots/Nezuko
 const xeonaudp3 = require('./lib/ytdl2')
 if (args.length < 1 || !isUrl(text) || !xeonaudp3.isYTUrl(text)) return replygcxeon(`Where's the yt link?\nExample: ${prefix + command} https://youtube.com/shorts/YQf-vMjDuKY?feature=share`)
 const audio=await xeonaudp3.mp3(text)
