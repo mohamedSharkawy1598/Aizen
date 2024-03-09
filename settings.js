@@ -22,7 +22,7 @@ global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
 global.owner = ['201284329186'] //ur owner number
-global.ownernomer = "201284329186" //ur owner number2
+global.ownernomer = "201015411497" //ur owner number2
 global.ownername = "𝑺𝑼𝑵𝑮 𝑿👨🏻‍💻" //ur owner name
 global.ytname = "insta: XSungX" //ur yt chanel name
 global.socialm = "Whats: Sung" //ur github or insta name
@@ -30,7 +30,7 @@ global.location = "Egypt, Qena" //ur location
 
 //new
 global.botname = "𝑨𝑰𝒁𝑬𝑵 𝑩𝑶𝑻🪽"
-global.ownernumber = '201284329186'
+global.ownernumber = '201015411497'
 global.ownername = '𝑺𝑼𝑵𝑮 𝑿👨🏻‍💻'
 global.ownerNumber = ["201284329186@s.whatsapp.net"]
 global.ownerweb = "https://chat.whatsapp.com/EoWXEQ9FzIO8EzacEBdMzX"
@@ -41,7 +41,7 @@ global.wm = "𝑺𝑼𝑵𝑮 𝑿"
 global.botscript = 'https://chat.whatsapp.com/EoWXEQ9FzIO8EzacEBdMzX' //script link
 global.packname = "𝑨𝑰𝒁𝑬𝑵 𝑩𝑶𝑻"
 global.author = "خذ صمبوصة\n\n"
-global.creator = "201284329186@s.whatsapp.net"
+global.creator = "201015411497@s.whatsapp.net"
 global.prefa = ['~','!','.','#','&']
 global.sessionName = 'session'
 global.hituet = 0
