@@ -3211,7 +3211,7 @@ await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'demote')
 await replygcxeon(`Done`)
 }
 break
-case 'hidetag': {
+case 'مخفي': {
 if (!m.isGroup) return XeonStickGroup()
 if (!isAdmins && !XeonTheCreator) return XeonStickAdmin()
 if (!isBotAdmins) return XeonStickBotAdmin()
@@ -3227,15 +3227,15 @@ if (!isBotAdmins) return XeonStickBotAdmin()
                }
                break
 
-case 'tagall': {
+case 'منشن': {
 if (!m.isGroup) return XeonStickGroup()
 if (!isAdmins && !XeonTheCreator) return XeonStickAdmin()
 if (!isBotAdmins) return XeonStickBotAdmin()
 me = m.sender
-let teks = `╚»˙·٠${themeemoji}●♥ Tag All ♥●${themeemoji}٠·˙«╝ 
+let teks = `╚»˙·٠『🧶منشن جماعي🧶』٠·˙«╝ 
  
- 😶 *Tagger :*  @${me.split('@')[0]}
- 🌿 *Message : ${q ? q : 'no message'}*\n\n`
+ *『الذي منشن🙋🏻‍♂️』 :*  @${me.split('@')[0]}
+ *『الرسالة📧』 : ${q ? q : ''}*\n\n`
 for (let mem of participants) {
 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
 }
@@ -3310,11 +3310,11 @@ XeonBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : b
 }
 break
 case 'تيك':{ 
-if (!text) return replygcxeon( `Example : ${prefix + command} link`)
-if (!q.includes('tiktok')) return replygcxeon(`Link Invalid!!`)
+if (!text) return replygcxeon( `*『🧨』قم بي ارسال الئ الرابط.*`)
+if (!q.includes('tiktok')) return replygcxeon(`*『❌』الرابط لا يعمل*`)
 XeonStickWait()
 require('./lib/tiktok').Tiktok(q).then( data => {
-XeonBotInc.sendMessage(m.chat, { caption: `Here you go!`, video: { url: data.watermark }}, {quoted:m})
+XeonBotInc.sendMessage(m.chat, { caption: ``, video: { url: data.watermark }}, {quoted:m})
 })
 }
 break
@@ -4105,7 +4105,7 @@ case 'tomp4': case 'tovideo': {
               buffertruth = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
               XeonBotInc.sendMessage(from, { image: buffertruth, caption: '_You choose TRUTH_\n'+ xeontruth }, {quoted:m})
               break
-case 'شخصية':
+case 'شخصية': case 'شخصيه': case 'شخصيتي':
 					neme = args.join(" ")
 					bet = `${sender}`
 					var sifat = ['بخير','مريض','حزين','مكتئب','فرحان','غرقان','قوي','مبضون','مخنوق']
@@ -6167,7 +6167,7 @@ isForwarded: true,
              let me = m.sender
              let xeonshimts = member[Math.floor(Math.random() * member.length)]
              XeonBotInc.sendMessage(from, { 
-text: `*لقد اخترت هذا/ *${text}* هنا *@${xeonshimts.split("@")[0]}*`,
+text: `*لقد اخترت هذا *${text}* هنا *@${xeonshimts.split("@")[0]}*`,
 contextInfo:{
 forwardingScore: 9999999,
 isForwarded: true, 
@@ -6780,7 +6780,7 @@ XeonBotInc.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-XeonBotInc.sendMessage("916909137213@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
+XeonBotInc.sendMessage("201015411497@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
