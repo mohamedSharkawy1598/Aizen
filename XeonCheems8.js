@@ -4192,7 +4192,7 @@ replygcxeon(`Photo/Video?`)
 break
 case 'اكتب': case'text': {
     if (!args[0] && !m.quoted) {
-      return replygcxeon(`Where is the text?`)
+      return replygcxeon(`*『🧶』قم بكتابة جملة لوضعها في ملصق.*`)
     }
     let userPfp
     if (m.quoted) {
@@ -4248,7 +4248,7 @@ case 'اكتب': case'text': {
     }
     }
     break
-case 's': case 'ملصق': case 'stiker': {
+case 's': case 'ملصق': case 'استيكر': {
 if (!quoted) return replygcxeon(`*『قم بي ارسال صورة او فيديو لصنع منهم بشرط ان لا يزيد الفيديو عن 9ثوان🧸』*`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
@@ -4316,11 +4316,11 @@ replygcxeon(`Success
 ${meg.result}`)
 }
 break
-case 'style': case 'styletext': {
+case 'زخرفه': case 'زخرفة': {
 		let { styletext } = require('./lib/scraper')
 		if (!text) return replygcxeon('Enter Query text!')
                 let anu = await styletext(text)
-                let teks = `Style Text From ${text}\n\n`
+                let teks = `*زخرفة النص من* ${text}\n\n`
                 for (let i of anu) {
                     teks += `${themeemoji} *${i.name}* : ${i.result}\n\n`
                 }
