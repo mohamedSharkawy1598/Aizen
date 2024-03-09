@@ -6431,7 +6431,7 @@ result = anutrest[Math.floor(Math.random() * anutrest.length)]
 XeonBotInc.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
 }
 break
-case 'رنة': {
+case 'رنة': case 'رنه': {
 		if (!text) return replygcxeon(`*『قم بكتابة اسم الرنة لاكن بي الانجليزي🧸』*`)
         let { ringtone } = require('./lib/scraper')
 		let anutone2 = await ringtone(text)
