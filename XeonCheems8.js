@@ -1347,7 +1347,7 @@ XeonBotInc.ev.emit('messages.upsert', msg)
 }
 
 switch (command) {
-case 'ttc': case 'ttt': case 'tictactoe': {
+case 'اكس': case 'اكس-او': case 'او': {
             let TicTacToe = require("./lib/tictactoe")
             this.game = this.game ? this.game : {}
             if (Object.values(this.game).find(room13 => room13.id.startsWith('tictactoe') && [room13.game.playerX, room13.game.playerO].includes(m.sender))) return replygcxeon(`You Are Still In The Game`)
@@ -3235,7 +3235,7 @@ me = m.sender
 let teks = `╚»˙·٠『🧶منشن جماعي🧶』٠·˙«╝ 
  
  *『الذي منشن🙋🏻‍♂️』 :*  @${me.split('@')[0]}
- *『الرسالة📧』 : ${q ? q : ''}*\n\n`
+ *『الرسالة📧』 :* ${q ? q : ''}\n\n`
 for (let mem of participants) {
 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
 }
